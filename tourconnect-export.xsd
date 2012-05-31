@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:complexType name="type_contract_header">
+		<xs:sequence>
+			<xs:element name="tourconnect_contract_id"/>
+			<xs:element name="tourconnect_contract_version" type="xs:integer"/>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="start_date" type="xs:date"/>
+			<xs:element name="end_date" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="type_contract_footer">
+		<xs:sequence>
+			<xs:element name="signatures" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="supplier_sign_date" type="xs:dateTime"/>
+						<xs:element name="supplier_user" type="xs:string"/>
+						<xs:element name="contractor_sign_date" type="xs:dateTime"/>
+						<xs:element name="contractor_user" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="revision_history" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="revision" type="xs:float"/>
+						<xs:element name="by_company" type="xs:string"/>
+						<xs:element name="section" type="xs:string"/>
+						<xs:element name="contract_changes" type="xs:string"/>
+						<xs:element name="version" type="xs:integer"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="type_contract_location">
+		<xs:sequence>
+			<xs:element name="unique_id" type="xs:string"/>
+			<xs:element name="reference_id" type="xs:string"/>
+			<xs:element name="location_type" type="xs:string"/>
+			<xs:element name="property_name" type="xs:string"/>
+			<xs:element name="short_description" type="xs:string"/>
+			<xs:element name="long_description" type="xs:string"/>
+			<xs:element name="complies_to_eu_regulation" type="xs:boolean"/>
+			<xs:element name="phone" type="xs:string"/>
+			<xs:element name="fax" type="xs:string"/>
+			<xs:element name="web_site" type="xs:string"/>
+			<xs:element name="use_corporate_insurance" type="xs:boolean"/>
+			<xs:element name="transfers_not_provided" type="xs:boolean"/>
+			<xs:element name="special_offers_not_provided" type="xs:boolean"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="address">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="address_1" type="xs:string"/>
+						<xs:element name="address_2" type="xs:string"/>
+						<xs:element name="city" type="xs:string"/>
+						<xs:element name="state" type="xs:string"/>
+						<xs:element name="country" type="xs:string"/>
+						<xs:element name="postal_code" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="rating_and_amenity">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="classification" type="xs:array"/>
+						<xs:element name="rating" type="xs:integer"/>
+						<xs:element name="rating_type" type="xs:string"/>
+						<xs:element name="amenities" type="xs:array"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="location_transfer">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="transfer_name"/>
+						<xs:element name="provide_by_hotel" type="xs:boolean"/>
+						<xs:element name="from_location" type="xs:string"/>
+						<xs:element name="to_location" type="xs:string"/>
+						<xs:element name="max_passenger" type="xs:integer"/>
+						<xs:element name="include_baby_seat" type="xs:boolean"/>
+						<xs:element name="adult_return_rate" type="xs:float"/>
+						<xs:element name="adult_return_type" type="xs:string"/>
+						<xs:element name="adult_return_amount" type="xs:float"/>
+						<xs:element name="child_return_rate" type="xs:float"/>
+						<xs:element name="child_return_type" type="xs:string"/>
+						<xs:element name="child_return_amount" type="xs:float"/>
+						<xs:element name="adult_one_way_rate" type="xs:float"/>
+						<xs:element name="adult_one_way_type" type="xs:string"/>
+						<xs:element name="adult_one_way_amount" type="xs:float"/>
+						<xs:element name="child_one_way_rate" type="xs:float"/>
+						<xs:element name="child_one_way_type" type="xs:string"/>
+						<xs:element name="child_one_way_amount" type="xs:float"/>
+						<xs:element name="luggage_restrictions" type="xs:string"/>
+						<xs:element name="pick_up_detail" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="contact_information">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="first_name" type="xs:string"/>
+						<xs:element name="last_name" type="xs:string"/>
+						<xs:element name="email" type="xs:string"/>
+						<xs:element name="phone" type="xs:string"/>
+						<xs:element name="fax" type="xs:string"/>
+						<xs:element name="contact_type" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="insurance_information">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="name" type="xs:string"/>
+						<xs:element name="expire_month" type="xs:integer"/>
+						<xs:element name="expire_year" type="xs:integer"/>
+						<xs:element name="document_file_name" type="xs:string"/>
+						<xs:element name="document_content_type" type="xs:string"/>
+						<xs:element name="document_file_size" type="xs:integer"/>
+						<xs:element name="document_updated_at" type="xs:datetime"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="billing">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="currency" type="xs:string"/>
+						<xs:element name="tax" type="xs:string"/>
+						<xs:element name="terms" type="xs:string"/>
+						<xs:element name="financial_institution" type="xs:string"/>
+						<xs:element name="branch" type="xs:string"/>
+						<xs:element name="bsb_routing" type="xs:string"/>
+						<xs:element name="account_name" type="xs:string"/>
+						<xs:element name="account_number" type="xs:string"/>
+						<xs:element name="abn" type="xs:string"/>
+						<xs:element name="iban_swift_code" type="xs:string"/>
+						<xs:element name="location_billing" type="xs:boolean"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="1" minOccurs="0" name="location_policy">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="infant_age" type="xs:range"/>
+						<xs:element name="children_age" type="xs:range"/>
+						<xs:element name="infant_policy_applicable" type="xs:boolean"/>
+						<xs:element name="child_policy_applicable" type="xs:boolean"/>
+						<xs:element name="adult_count" type="xs:integer"/>
+						<xs:element name="children_count" type="xs:integer"/>
+						<xs:element name="child_accompany_count" type="xs:integer"/>
+						<xs:element name="family_policy_not_applicable" type="xs:boolean"/>
+						<xs:element name="fee_type" type="xs:string"/>
+						<xs:element name="amount" type="xs:float"/>
+						<xs:element name="before_hours" type="xs:integer"/>
+						<xs:element name="before_hours_type" type="xs:string"/>
+						<xs:element name="additional_detail" type="xs:string"/>
+						<xs:element name="group_policy_conditions" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="season">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="name" type="xs:string"/>
+						<xs:element name="start_date" type="xs:date"/>
+						<xs:element name="end_date" type="xs:date"/>
+						<xs:element name="room_rate_without_change" type="xs:boolean"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="season_period">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="name" type="xs:string"/>
+									<xs:element name="season_type" type="xs:string"/>
+									<xs:element name="start_date" type="xs:date"/>
+									<xs:element name="end_date" type="xs:date"/>
+									<xs:element name="for_product" type="xs:boolean"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element maxOccurs="1" minOccurs="0" name="rate">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="room_rate_type" type="xs:string"/>
+									<xs:element name="markets" type="xs:array"/>
+									<xs:element name="other_market" type="xs:string"/>
+									<xs:element name="rates" type="xs:string"/>
+									<xs:element name="rate_type" type="xs:string"/>
+									<xs:element name="commission_percentage" type="xs:string"/>
+									<xs:element name="meal_rate" type="xs:string"/>
+									<xs:element name="meal_commission_percentage" type="xs:string"/>
+									<xs:element name="special_event_rate" type="xs:string"/>
+									<xs:element name="event_commission_percentage" type="xs:string"/>
+									<xs:element name="same_as_other_days" type="xs:boolean"/>
+									<xs:element name="days" type="xs:array"/>
+									<xs:element name="min_stay" type="xs:integer"/>
+									<xs:element maxOccurs="unbounded" minOccurs="0"
+										name="rate_detail">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="rate_detail_type" type="xs:string"/>
+												<xs:element name="season_period_id" type="xs:string"/>
+												<xs:element name="desc" type="xs:string"/>
+												<xs:element name="price_code" type="xs:string"/>
+												<xs:element name="min_nights" type="xs:integer"/>
+												<xs:element name="adult_rate" type="xs:float"/>
+												<xs:element name="child_rate" type="xs:float"/>
+												<xs:element name="infant_rate" type="xs:float"/>
+												<xs:element name="student_rate" type="xs:float"/>
+												<xs:element name="rate_per_night" type="xs:float"/>
+												<xs:element name="retail_rate" type="xs:float"/>
+												<xs:element name="nett_rate" type="xs:float"/>
+												<xs:element name="concession_rate" type="xs:float"/>
+												<xs:element name="special_pricing_name"
+												type="xs:string"/>
+												<xs:element name="start_date" type="xs:date"/>
+												<xs:element name="end_date" type="xs:date"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element maxOccurs="unbounded" minOccurs="0"
+										name="weekend_rate_detail">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="rate_detail_type" type="xs:string"/>
+												<xs:element name="season_period_id" type="xs:string"/>
+												<xs:element name="desc" type="xs:string"/>
+												<xs:element name="price_code" type="xs:string"/>
+												<xs:element name="min_nights" type="xs:integer"/>
+												<xs:element name="adult_rate" type="xs:float"/>
+												<xs:element name="child_rate" type="xs:float"/>
+												<xs:element name="infant_rate" type="xs:float"/>
+												<xs:element name="student_rate" type="xs:float"/>
+												<xs:element name="rate_per_night" type="xs:float"/>
+												<xs:element name="retail_rate" type="xs:float"/>
+												<xs:element name="nett_rate" type="xs:float"/>
+												<xs:element name="concession_rate" type="xs:float"/>
+												<xs:element name="special_pricing_name"
+												type="xs:string"/>
+												<xs:element name="start_date" type="xs:date"/>
+												<xs:element name="end_date" type="xs:date"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element maxOccurs="unbounded" minOccurs="0" name="meal_rate">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="meal_type" type="xs:integer"/>
+												<xs:element name="name" type="xs:string"/>
+												<xs:element name="ad_rate" type="xs:float"/>
+												<xs:element name="ch_rate" type="xs:float"/>
+												<xs:element name="desc" type="xs:string"/>
+												<xs:element name="ad_retail_rate" type="xs:float"/>
+												<xs:element name="ch_retail_rate" type="xs:float"/>
+												<xs:element name="ad_nett_rate" type="xs:float"/>
+												<xs:element name="ch_nett_rate" type="xs:float"/>
+												<xs:element name="special_ad_nett_rate"
+												type="xs:float"/>
+												<xs:element name="special_ch_nett_rate"
+												type="xs:float"/>
+												<xs:element name="date" type="xs:date"/>
+												<xs:element name="mandatory" type="xs:boolean"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+									<xs:element maxOccurs="unbounded" minOccurs="0"
+										name="special_meal_rate">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="meal_type" type="xs:integer"/>
+												<xs:element name="name" type="xs:string"/>
+												<xs:element name="ad_rate" type="xs:float"/>
+												<xs:element name="ch_rate" type="xs:float"/>
+												<xs:element name="desc" type="xs:string"/>
+												<xs:element name="ad_retail_rate" type="xs:float"/>
+												<xs:element name="ch_retail_rate" type="xs:float"/>
+												<xs:element name="ad_nett_rate" type="xs:float"/>
+												<xs:element name="ch_nett_rate" type="xs:float"/>
+												<xs:element name="special_ad_nett_rate"
+												type="xs:float"/>
+												<xs:element name="special_ch_nett_rate"
+												type="xs:float"/>
+												<xs:element name="date" type="xs:date"/>
+												<xs:element name="mandatory" type="xs:boolean"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element maxOccurs="1" minOccurs="0" name="tour_rate">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="markets" type="xs:array"/>
+									<xs:element name="other_market" type="xs:string"/>
+									<xs:element name="depart_on" type="xs:string"/>
+									<xs:element name="departs_on_days" type="xs:array"/>
+									<xs:element name="include_meal" type="xs:boolean"/>
+									<xs:element name="meal_detail" type="xs:string"/>
+									<xs:element name="gst_tax_included" type="xs:boolean"/>
+									<xs:element maxOccurs="unbounded" minOccurs="0"
+										name="departs_on_daterange">
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="start_date" type="xs:date"/>
+												<xs:element name="end_date" type="xs:date"/>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="offer">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="title" type="xs:string"/>
+						<xs:element name="offer_type" type="xs:string"/>
+						<xs:element name="booking_code" type="xs:string"/>
+						<xs:element name="combine_with_other" type="xs:boolean"/>
+						<xs:element name="combine_offer_desc" type="xs:string"/>
+						<xs:element name="special_conditions" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="stay_pay_deal">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="title" type="xs:string"/>
+						<xs:element name="offer_type" type="xs:string"/>
+						<xs:element name="booking_code" type="xs:string"/>
+						<xs:element name="combine_with_other" type="xs:boolean"/>
+						<xs:element name="combine_offer_desc" type="xs:string"/>
+						<xs:element name="special_conditions" type="xs:string"/>
+						<xs:element name="partial_offer" type="xs:boolean"/>
+						<xs:element name="standard_room_meal_offer" type="xs:boolean"/>
+						<xs:element maxOccurs="1" minOccurs="0" name="stay_pay_offer">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="name" type="xs:string"/>
+									<xs:element name="stay" type="xs:integer"/>
+									<xs:element name="pay" type="xs:integer"/>
+									<xs:element name="apply_for_weekend" type="xs:boolean"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="room_upgrade_offer">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="title" type="xs:string"/>
+						<xs:element name="offer_type" type="xs:string"/>
+						<xs:element name="booking_code" type="xs:string"/>
+						<xs:element name="combine_with_other" type="xs:boolean"/>
+						<xs:element name="combine_offer_desc" type="xs:string"/>
+						<xs:element name="special_conditions" type="xs:string"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="room_type_upgrade">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="from_room_type" type="xs:string"/>
+									<xs:element name="to_room_type" type="xs:string"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="family_offer">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="title" type="xs:string"/>
+						<xs:element name="offer_type" type="xs:string"/>
+						<xs:element name="booking_code" type="xs:string"/>
+						<xs:element name="combine_with_other" type="xs:boolean"/>
+						<xs:element name="combine_offer_desc" type="xs:string"/>
+						<xs:element name="special_conditions" type="xs:string"/>
+						<xs:element name="offer_detail" type="xs:string"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0"
+							name="family_offer_room_type">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="room_type" type="xs:string"/>
+									<xs:element name="rate" type="xs:string"/>
+									<xs:element name="rate_discount_type" type="xs:string"/>
+									<xs:element name="rate_discount_amount" type="xs:float"/>
+									<xs:element name="rate_nett" type="xs:float"/>
+									<xs:element name="rate_commission" type="xs:float"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="bonus_offer">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="title" type="xs:string"/>
+						<xs:element name="offer_type" type="xs:string"/>
+						<xs:element name="booking_code" type="xs:string"/>
+						<xs:element name="combine_with_other" type="xs:boolean"/>
+						<xs:element name="combine_offer_desc" type="xs:string"/>
+						<xs:element name="special_conditions" type="xs:string"/>
+						<xs:element name="offer_detail" type="xs:string"/>
+						<xs:element name="rate_type" type="xs:string"/>
+						<xs:element name="member_count" type="xs:integer"/>
+						<xs:element name="member_max_count" type="xs:integer"/>
+						<xs:element name="rate" type="xs:string"/>
+						<xs:element name="rate_discount_type" type="xs:string"/>
+						<xs:element name="rate_discount_amount" type="xs:float"/>
+						<xs:element name="rate_nett" type="xs:float"/>
+						<xs:element name="rate_commission" type="xs:float"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="accommodation_product">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="name" type="xs:string"/>
+						<xs:element name="code" type="xs:string"/>
+						<xs:element name="reference_id" type="xs:string"/>
+						<xs:element name="offer_ids" type="xs:hash"/>
+						<xs:element name="allocation_type" type="xs:string"/>
+						<xs:element name="number_of_rooms" type="xs:integer"/>
+						<xs:element name="releaseback_days" type="xs:integer"/>
+						<xs:element name="short_desc" type="xs:string"/>
+						<xs:element name="detail" type="xs:string"/>
+						<xs:element name="general_notes" type="xs:string"/>
+						<xs:element name="complies_to_eu_regulation" type="xs:boolean"/>
+						<xs:element name="is_complete" type="xs:boolean"/>
+						<xs:element name="season_room_rates" type="xs:hash"/>
+						<xs:element name="comments_count" type="xs:integer"/>
+						<xs:element name="use_location_child_policy" type="xs:boolean"/>
+						<xs:element name="use_location_adult_policy" type="xs:boolean"/>
+						<xs:element name="use_location_cancelation_policy" type="xs:boolean"/>
+						<xs:element name="use_location_group_policy" type="xs:boolean"/>
+						<xs:element name="unique_id" type="xs:string"/>
+						<xs:element maxOccurs="1" minOccurs="0" name="room">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="check_in_time" type="xs:string"/>
+									<xs:element name="check_out_time" type="xs:string"/>
+									<xs:element name="late_checkout" type="xs:boolean"/>
+									<xs:element name="late_checkout_until" type="xs:string"/>
+									<xs:element name="late_checkout_cost" type="xs:float"/>
+									<xs:element name="classification" type="xs:string"/>
+									<xs:element name="adult_max_pax" type="xs:integer"/>
+									<xs:element name="child_max_pax" type="xs:integer"/>
+									<xs:element name="existing_bedding" type="xs:array"/>
+									<xs:element name="number_of_sofa" type="xs:integer"/>
+									<xs:element name="number_of_rollaways" type="xs:integer"/>
+									<xs:element name="existing_bedding_for_children"
+										type="xs:boolean"/>
+									<xs:element name="interconnecting_rooms" type="xs:boolean"/>
+									<xs:element name="amenities" type="xs:array"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="season_rate">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="room_rate_type" type="xs:string"/>
+									<xs:element name="markets" type="xs:array"/>
+									<xs:element name="other_market" type="xs:string"/>
+									<xs:element name="rates" type="xs:string"/>
+									<xs:element name="rate_type" type="xs:string"/>
+									<xs:element name="commission_percentage" type="xs:string"/>
+									<xs:element name="meal_rate" type="xs:string"/>
+									<xs:element name="meal_commission_percentage" type="xs:string"/>
+									<xs:element name="special_event_rate" type="xs:string"/>
+									<xs:element name="event_commission_percentage" type="xs:string"/>
+									<xs:element name="same_as_other_days" type="xs:boolean"/>
+									<xs:element name="days" type="xs:array"/>
+									<xs:element name="min_stay" type="xs:integer"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="non_accommodation_product">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="service_name" type="xs:string"/>
+						<xs:element name="tour_code" type="xs:string"/>
+						<xs:element name="reference_id" type="xs:string"/>
+						<xs:element name="bonus_offer_ids" type="xs:hash"/>
+						<xs:element name="tour_duration" type="xs:integer"/>
+						<xs:element name="tour_duration_unit" type="xs:string"/>
+						<xs:element name="short_desc" type="xs:string"/>
+						<xs:element name="desc" type="xs:string"/>
+						<xs:element name="adult_min_pax" type="xs:integer"/>
+						<xs:element name="child_min_pax" type="xs:integer"/>
+						<xs:element name="total_min_pax" type="xs:integer"/>
+						<xs:element name="adult_max_pax" type="xs:integer"/>
+						<xs:element name="child_max_pax" type="xs:integer"/>
+						<xs:element name="total_max_pax" type="xs:integer"/>
+						<xs:element name="pickup_depart_time" type="xs:string"/>
+						<xs:element name="pickup_depart_location" type="xs:string"/>
+						<xs:element name="dropoff_depart_time" type="xs:string"/>
+						<xs:element name="dropoff_depart_location" type="xs:string"/>
+						<xs:element name="standard_inclusion" type="xs:string"/>
+						<xs:element name="what_to_bring" type="xs:string"/>
+						<xs:element name="is_complete" type="xs:boolean"/>
+						<xs:element name="comments_count" type="xs:integer"/>
+						<xs:element name="unique_id" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="type_tourconnect_contract">
+		<xs:sequence>
+			<xs:element name="contract_header" type="type_contract_header"/>
+			<xs:element name="contractor_contract_information" minOccurs="0" maxOccurs="1">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="tourconnect_id" type="xs:string"/>
+						<xs:element name="company_name" type="xs:string"/>
+						<xs:element name="contractor_terms_and_conditions"/>
+						<xs:element name="contractor_submission_criteria"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="supplier_contract_information" type="type_contract_location"/>
+			<xs:element name="contract_footer" type="type_contract_footer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="tourconnect_contract_export">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="export_reference_id">
+					<xs:annotation>
+						<xs:documentation>internally generated. this is so we can track any export issues and have a cross reference identifier.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="export_version_id">
+					<xs:annotation>
+						<xs:documentation>This is the export version id.  This will be used by partners to identify which version of the XML they are extracing from our system.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="export_contractor_id"/>
+				<xs:element name="export_date_time"/>
+				<xs:element name="export_record_count"/>
+				<xs:element maxOccurs="unbounded" name="contracts" type="type_tourconnect_contract"
+				/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
