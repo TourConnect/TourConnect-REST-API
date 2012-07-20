@@ -10,6 +10,7 @@
             <xs:element name="adult_count" type="xs:integer"/>
             <xs:element name="children_count" type="xs:integer"/>
             <xs:element name="child_accompany_count" type="xs:integer"/>
+            <xs:element name="group_policy_conditions" type="xs:string"/>
             <xs:element maxOccurs="1" minOccurs="0" name="location_cancellation_policy">
                 <xs:complexType>
                     <xs:sequence>
@@ -21,7 +22,6 @@
                 </xs:complexType>
             </xs:element>
             <xs:element name="additional_detail" type="xs:string"/>
-            <xs:element name="group_policy_conditions" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 	<xs:complexType name="type_stay_pay_deal">
@@ -364,7 +364,7 @@
 						<xs:element name="is_complete" type="xs:boolean"/>
 						<xs:element name="comments_count" type="xs:integer"/>
 						<xs:element name="unique_id" type="xs:string"/>
-						<xs:element maxOccurs="unbounded" minOccurs="0" name="season_rate">
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="tour_rate">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="room_rate_type" type="xs:string"/>
@@ -373,14 +373,6 @@
 									<xs:element name="rates" type="xs:string"/>
 									<xs:element name="rate_type" type="xs:string"/>
 									<xs:element name="commission_percentage" type="xs:string"/>
-									<xs:element name="meal_rate" type="xs:string"/>
-									<xs:element name="meal_commission_percentage" type="xs:string"/>
-									<xs:element name="special_event_rate" type="xs:string"/>
-									<xs:element name="event_commission_percentage" type="xs:string"/>
-									<xs:element name="same_as_other_days" type="xs:boolean"/>
-									<xs:element maxOccurs="unbounded" minOccurs="0" name="days" type="xs:string"/>
-									<xs:element name="min_stay" type="xs:integer"/>
-									<xs:element name="deport_on_type" type="xs:string"/>
 									<xs:element maxOccurs="unbounded" minOccurs="0" name="deports_on_days" type="xs:string"/>
                                     <xs:element maxOccurs="unbounded" minOccurs="0" name="date_range">
                                         <xs:complexType>
@@ -390,9 +382,7 @@
 					                        </xs:sequence>
 				                        </xs:complexType>
 			                        </xs:element>
-									<xs:element name="meal_included" type="xs:boolean"/>
 									<xs:element name="gst_tax_included" type="xs:boolean"/>
-									<xs:element name="meal_detail" type="xs:string"/>
 					            </xs:sequence>
 				            </xs:complexType>
 			            </xs:element>
