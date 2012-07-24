@@ -27,7 +27,6 @@
 	<xs:complexType name="type_stay_pay_deal">
 		<xs:sequence>
 			<xs:element name="title" type="xs:string"/>
-			<xs:element name="offer_type" type="xs:string"/>
 			<xs:element name="booking_code" type="xs:string"/>
 			<xs:element name="combine_with_other" type="xs:boolean"/>
 			<xs:element name="combine_offer_desc" type="xs:string"/>
@@ -37,7 +36,6 @@
 			<xs:element maxOccurs="1" minOccurs="0" name="stay_pay_offer">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="name" type="xs:string"/>
 						<xs:element name="stay" type="xs:integer"/>
 						<xs:element name="pay" type="xs:integer"/>
 						<xs:element name="apply_for_weekend" type="xs:boolean"/>
@@ -49,7 +47,6 @@
 	<xs:complexType name="type_room_upgrade_offer">
 		<xs:sequence>
 			<xs:element name="title" type="xs:string"/>
-			<xs:element name="offer_type" type="xs:string"/>
 			<xs:element name="booking_code" type="xs:string"/>
 			<xs:element name="combine_with_other" type="xs:boolean"/>
 			<xs:element name="combine_offer_desc" type="xs:string"/>
@@ -67,7 +64,6 @@
 	<xs:complexType name="type_family_offer">
 		<xs:sequence>
 			<xs:element name="title" type="xs:string"/>
-			<xs:element name="offer_type" type="xs:string"/>
 			<xs:element name="booking_code" type="xs:string"/>
 			<xs:element name="combine_with_other" type="xs:boolean"/>
 			<xs:element name="combine_offer_desc" type="xs:string"/>
@@ -90,7 +86,6 @@
 	<xs:complexType name="type_bonus_offer">
 		<xs:sequence>
 			<xs:element name="title" type="xs:string"/>
-			<xs:element name="offer_type" type="xs:string"/>
 			<xs:element name="booking_code" type="xs:string"/>
 			<xs:element name="combine_with_other" type="xs:boolean"/>
 			<xs:element name="combine_offer_desc" type="xs:string"/>
@@ -143,7 +138,6 @@
 	<xs:complexType name="type_contract_location">
 		<xs:sequence>
 			<xs:element name="unique_id" type="xs:string"/>
-			<xs:element name="reference_id" type="xs:string"/>
 			<xs:element name="location_type" type="xs:string"/>
 			<xs:element name="property_name" type="xs:string"/>
 			<xs:element name="short_description" type="xs:string"/>
@@ -173,7 +167,7 @@
 						<xs:element maxOccurs="unbounded" minOccurs="0" name="classification" type="xs:string"/>
 						<xs:element name="rating" type="xs:integer"/>
 						<xs:element name="rating_type" type="xs:string"/>
-						<xs:element maxOccurs="unbounded" minOccurs="0"  name="amenities" type="xs:string"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0"  name="amenity" type="xs:string"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -213,15 +207,12 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element maxOccurs="unbounded" minOccurs="0" name="insurance_information">
+			<xs:element maxOccurs="1" minOccurs="0" name="insurance_information">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="name" type="xs:string"/>
 						<xs:element name="expire_month" type="xs:integer"/>
 						<xs:element name="expire_year" type="xs:integer"/>
-						<xs:element name="document_file_name" type="xs:string"/>
-						<xs:element name="document_content_type" type="xs:string"/>
-						<xs:element name="document_file_size" type="xs:integer"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -243,24 +234,15 @@
 				</xs:complexType>
 			</xs:element>
             <xs:element maxOccurs="1" minOccurs="0" name="location_policy" type="type_location_policy"/>
-            <xs:element maxOccurs="1" minOccurs="0" name="stay_pay_deal" type="type_stay_pay_deal"/>
-            <xs:element maxOccurs="1" minOccurs="0" name="room_upgrade_offer" type="type_room_upgrade_offer"/>
-            <xs:element maxOccurs="1" minOccurs="0" name="family_offer" type="type_family_offer"/>
-            <xs:element maxOccurs="1" minOccurs="0" name="bonus_offer" type="type_bonus_offer"/>
+            <xs:element maxOccurs="1" minOccurs="unbounded" name="stay_pay_deal" type="type_stay_pay_deal"/>
+            <xs:element maxOccurs="1" minOccurs="unbounded" name="room_upgrade_offer" type="type_room_upgrade_offer"/>
+            <xs:element maxOccurs="1" minOccurs="unbounded" name="family_offer" type="type_family_offer"/>
+            <xs:element maxOccurs="1" minOccurs="unbounded" name="bonus_offer" type="type_bonus_offer"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" name="accommodation_product">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="name" type="xs:string"/>
 						<xs:element name="code" type="xs:string"/>
-						<xs:element name="reference_id" type="xs:string"/>
-						<xs:element maxOccurs="1" minOccurs="0" name="offer_ids">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="key"></xs:element>
-									<xs:element name="value"></xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
 						<xs:element name="allocation_type" type="xs:string"/>
 						<xs:element name="number_of_rooms" type="xs:integer"/>
 						<xs:element name="releaseback_days" type="xs:integer"/>
@@ -268,8 +250,7 @@
 						<xs:element name="detail" type="xs:string"/>
 						<xs:element name="general_notes" type="xs:string"/>
 						<xs:element name="complies_to_eu_regulation" type="xs:boolean"/>
-						<xs:element name="is_complete" type="xs:boolean"/>
-						<xs:element maxOccurs="1" minOccurs="0" name="season_room_rates">
+						<xs:element maxOccurs="1" minOccurs="0" name="room_rate">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="key"></xs:element>
@@ -277,7 +258,6 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="comments_count" type="xs:integer"/>
 						<xs:element name="use_location_child_policy" type="xs:boolean"/>
 						<xs:element name="use_location_adult_policy" type="xs:boolean"/>
 						<xs:element name="use_location_cancelation_policy" type="xs:boolean"/>
@@ -290,7 +270,14 @@
 									<xs:element name="check_out_time" type="xs:string"/>
 									<xs:element name="late_checkout" type="xs:boolean"/>
 									<xs:element name="late_checkout_until" type="xs:string"/>
-									<xs:element name="late_checkout_cost" type="xs:float"/>
+                                    <xs:element name="late_checkout_cost" type="xs:float"/>
+                                    <xs:element name="late_checkout_cost_type" type="xs:string"/>
+                                    <xs:element name="late_checkout_percentage_type" type="xs:string"/>
+									<xs:element name="early_checkin" type="xs:boolean"/>
+									<xs:element name="early_checkin_from" type="xs:string"/>
+                                    <xs:element name="early_checkin_cost" type="xs:float"/>
+                                    <xs:element name="early_checkin_cost_type" type="xs:string"/>
+                                    <xs:element name="early_checkin_percentage_type" type="xs:string"/>
 									<xs:element name="classification" type="xs:string"/>
 									<xs:element name="adult_max_pax" type="xs:integer"/>
 									<xs:element name="child_max_pax" type="xs:integer"/>
@@ -323,11 +310,11 @@
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
-						<xs:element maxOccurs="1" minOccurs="0" name="location_policy" type="type_location_policy"/>
-                		<xs:element maxOccurs="1" minOccurs="0" name="stay_pay_deal" type="type_stay_pay_deal"/>
-                		<xs:element maxOccurs="1" minOccurs="0" name="room_upgrade_offer" type="type_room_upgrade_offer"/>
-                		<xs:element maxOccurs="1" minOccurs="0" name="family_offer" type="type_family_offer"/>
-                		<xs:element maxOccurs="1" minOccurs="0" name="bonus_offer" type="type_bonus_offer"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="location_policy" type="type_location_policy"/>
+                		<xs:element maxOccurs="unbounded" minOccurs="0" name="stay_pay_deal" type="type_stay_pay_deal"/>
+                		<xs:element maxOccurs="unbounded" minOccurs="0" name="room_upgrade_offer" type="type_room_upgrade_offer"/>
+                		<xs:element maxOccurs="unbounded" minOccurs="0" name="family_offer" type="type_family_offer"/>
+                		<xs:element maxOccurs="unbounded" minOccurs="0" name="bonus_offer" type="type_bonus_offer"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -395,7 +382,7 @@
                                 </xs:sequence>
                             </xs:complexType>
                         </xs:element>
-                        <xs:element maxOccurs="1" minOccurs="0" name="special_offer" type="type_bonus_offer"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="special_offer" type="type_bonus_offer"/>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
