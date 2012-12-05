@@ -164,6 +164,7 @@
 			<xs:element name="unique_id" type="xs:string"/>
 			<xs:element name="location_type" type="xs:string"/>
 			<xs:element name="property_name" type="xs:string"/>
+			<xs:element name="reference_id" type="xs:string"/>
 			<xs:element name="short_description" type="xs:string"/>
 			<xs:element name="long_description" type="xs:string"/>
 			<xs:element name="complies_to_eu_regulation" type="xs:boolean"/>
@@ -270,6 +271,7 @@
 						<xs:element name="allocation_type" type="xs:string"/>
 						<xs:element name="number_of_rooms" type="xs:integer"/>
 						<xs:element name="releaseback_days" type="xs:integer"/>
+						<xs:element name="reference_id" type="xs:string"/>
 						<xs:element name="short_desc" type="xs:string"/>
 						<xs:element name="detail" type="xs:string"/>
 						<xs:element name="general_notes" type="xs:string"/>
@@ -398,11 +400,7 @@
 						<xs:element name="total_min_pax" type="xs:integer"/>
 						<xs:element name="adult_max_pax" type="xs:integer"/>
 						<xs:element name="child_max_pax" type="xs:integer"/>
-						<xs:element name="total_max_pax" type="xs:integer"/>
-						<xs:element name="pickup_depart_time" type="xs:string"/>
-						<xs:element name="pickup_depart_location" type="xs:string"/>
-						<xs:element name="dropoff_depart_time" type="xs:string"/>
-						<xs:element name="dropoff_depart_location" type="xs:string"/>
+            <xs:element name="total_max_pax" type="xs:integer"/>
 						<xs:element name="standard_inclusion" type="xs:string"/>
 						<xs:element name="what_to_bring" type="xs:string"/>
 						<xs:element name="unique_id" type="xs:string"/>
@@ -433,6 +431,14 @@
                                                     </xs:complexType>
                                                 </xs:element>
                                                 <xs:element name="gst_tax_included" type="xs:boolean"/>
+                                                <xs:element name="pickup_depart_time" type="xs:string"/>
+                                                <xs:element name="pickup_depart_location" type="xs:string"/>
+                                                <xs:element name="hotel_pickup_included" type="xs:boolean"/>
+                                                <xs:element name="dropoff_depart_time" type="xs:string"/>
+                                                <xs:element name="dropoff_depart_location" type="xs:string"/>
+                                                <xs:element name="hotel_dropoff_included" type="xs:boolean"/>
+                                                <xs:element name="include_meal" type="xs:boolean"/>
+                                                <xs:element name="meal_detail" type="xs:string"/>
                                             </xs:sequence>
                                         </xs:complexType>
                                     </xs:element>
