@@ -149,11 +149,17 @@
 			<xs:element name="revision_history" minOccurs="0" maxOccurs="unbounded">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="revision" type="xs:float"/>
+						<xs:element name="revision" type="xs:integer"/>
+						<xs:element name="date_and_time" type="xs:dateTime"/>
 						<xs:element name="by_company" type="xs:string"/>
 						<xs:element name="section" type="xs:string"/>
-						<xs:element name="contract_changes" type="xs:string"/>
-						<xs:element name="version" type="xs:integer"/>
+			      <xs:element name="contract_changes" minOccurs="0" maxOccurs="unbounded">
+				      <xs:complexType>
+        				<xs:sequence>
+    						  <xs:element name="contract_change" type="xs:string"/>
+					      </xs:sequence>
+    				  </xs:complexType>
+			      </xs:element>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
