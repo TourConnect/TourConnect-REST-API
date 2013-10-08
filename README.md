@@ -10,7 +10,7 @@ https://contracting.tourconnect.com
 
 Before accessing the API, you will need the following:
 1.  **ContractorID** -  This is the name of your account and is normally the name of your company.
-2.  **Your API Key** -  This is available within your TourConnect profile.  To locate this key, login to your account and access click on API key within your profile. You will use this key for all REST GET operations.
+2.  **Your API Key** -  This is available within your TourConnect profile.  To locate this key, login to your account and then scroll down to the bottom of the 'Profile' page where you would see the value for your 'API Key'. You will use this key for all REST GET operations.
 3.  **API Version Number** - we maintain multiple versions of the API in the event that our subscribers need additional time to make necessary changes to their integration to take advantage of newly released versions of our API.  The CURRENT VERSION = 2
 
 Once you have all of the above information, you can begin downloading XML versions of your contracts.  Using the above information, your API endpoint prefix:
