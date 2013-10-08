@@ -1,4 +1,3 @@
-
 # TourConnect REST API
 
 TourConnect provides a REST API to retrieve signed contracts from the TourConnect servers.  This API is provided to registered users of TourConnect free of charge.  More information on TourConnect can be found at http://www.tourconnect.com.
@@ -39,10 +38,10 @@ There are several general status or return codes that come back after an API cal
 | 202 | OK
 | 203 | Invalid Contractor ID
 | 204 | Invalid SupplierID
-| 204 | Invalid Date format
-| 205 | Invalid Date Range
-| 206 | Invalid API Key
-| 207 | Invalid function.
+| 205 | Invalid Date format
+| 206 | Invalid Date Range
+| 207 | Invalid API Key
+| 208 | Invalid function.
 
 ##Retrieving Contracts
 There are various parameters that can be used to retrive your contract data.  You can download all contracts that have not yet been requested/transfered, you can request by date ranges, you can request by SupplierID and finally, by a combination of date range and SupplierID.
