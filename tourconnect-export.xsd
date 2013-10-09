@@ -833,6 +833,10 @@
   <xs:element name="tourconnect_contract_export">
     <xs:complexType>
       <xs:sequence>
+        <xs:element name="status_code">
+        </xs:element>
+        <xs:element name="status_message">
+        </xs:element>
         <xs:element name="export_reference_id">
           <xs:annotation>
             <xs:documentation>internally generated. this is so we can track any export issues and have a cross reference identifier.</xs:documentation>

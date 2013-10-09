@@ -38,10 +38,12 @@ There are several general status or return codes that come back after an API cal
 | 202 | OK
 | 203 | Invalid Contractor ID
 | 204 | Invalid SupplierID
-| 205 | Invalid Date format
+| 205 | Invalid Date format. Please specify date as yyyy-mm-dd
 | 206 | Invalid Date Range
 | 207 | Invalid API Key
-| 208 | Invalid function.
+| 208 | Invalid function
+| 209 | Invalid API Version
+| 210 | Invalid arguments: <list of invalid arguments> 
 
 ##Retrieving Contracts
 There are various parameters that can be used to retrive your contract data.  You can download all contracts that have not yet been requested/transfered, you can request by date ranges, you can request by SupplierID and finally, by a combination of date range and SupplierID.
