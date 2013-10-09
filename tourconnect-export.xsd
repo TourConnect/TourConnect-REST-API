@@ -176,8 +176,8 @@
               <xs:complexType>
                 <xs:sequence>
                   <xs:element name="description" type="xs:string"/>
-                  <xs:element name="max_adults" type="xs:integer"/>
-                  <xs:element name="max_adults_plus_child" type="xs:integer"/>
+                  <xs:element name="max_adults" type="xs:integer" default="0"/>
+                  <xs:element name="max_adults_plus_child" type="xs:integer" default="0"/>
                   <xs:element name="retail_rate" type="xs:float" default="0"/>
                   <xs:element name="nett_rate" type="xs:float" default="0"/>
                   <xs:element name="extra_adult" type="xs:string"/>
@@ -433,7 +433,7 @@
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
-            <xs:element name="rating" type="xs:integer"/>
+            <xs:element name="rating" type="xs:float"/>
             <xs:element name="rating_type" type="xs:string"/>
             <xs:element name="amenities">
               <xs:complexType>
@@ -576,10 +576,10 @@
                                                       <xs:element name="name" type="xs:string"/>
                                                       <xs:element name="code" type="xs:string"/>
                                                       <xs:element name="template_type" type="xs:string"/>
-                                                      <xs:element name="days_of_week">
+                                                      <xs:element name="days_of_week" minOccurs="0">
                                                         <xs:complexType>
                                                           <xs:sequence>
-                                                            <xs:element maxOccurs="unbounded" minOccurs="0" name="day_of_week" type="xs:string"/>
+                                                            <xs:element maxOccurs="unbounded" minOccurs="0" name="day" type="xs:string"/>
                                                           </xs:sequence>
                                                         </xs:complexType>
                                                       </xs:element>
