@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tourconnect_contract_export>
+  <status_code>202</status_code>
+  <status_message>OK</status_message>
+  <export_reference_id>5256b4af605b5adea5000001</export_reference_id>
+  <export_version_id>2</export_version_id>
+  <export_contractor_id>demo-contractor-company</export_contractor_id>
+  <export_date_time>2013-10-10T14:07:43+00:00</export_date_time>
+  <export_record_count>4</export_record_count>
+  <contracts>
+    <contract>
+      <contract_header>
+        <tourconnect_contract_id>5256aa7c7a0221d39300013f</tourconnect_contract_id>
+        <tourconnect_contract_version>6</tourconnect_contract_version>
+        <title>APR-2014 to MAR-2015: Demo Contractor Company / Demo Supplier Company - Contract</title>
+        <start_date>2014-04-01</start_date>
+        <end_date>2015-03-31</end_date>
+        <amendment_version>0</amendment_version>
+      </contract_header>
+      <contractor_contract_information>
+        <tourconnect_id>5256aa7c7a0221d393000145</tourconnect_id>
+        <company_name>Demo Contractor Company</company_name>
+        <contractor_terms_and_conditions>
+          <title>Demo Terms</title>
+          <description>Here goes demo contractor terms...</description>
+        </contractor_terms_and_conditions>
+        <contractor_submission_criterias>
+          <title>Demo Criteria</title>
+          <description>Here goes demo criteria for contractor...</description>
+        </contractor_submission_criterias>
+      </contractor_contract_information>
+      <supplier_contract_information>
+        <location_type>Accommodation</location_type>
+        <unique_id>LN15275</unique_id>
+        <property_name>Demo Location</property_name>
+        <reference_id>5256720898e0ea379c000019</reference_id>
+        <total_number_of_rooms>400</total_number_of_rooms>
+        <short_description>Location short description goes here...</short_description>
+        <long_description>Location long description goes here...</long_description>
+        <complies_to_eu_regulation>false</complies_to_eu_regulation>
+        <phone>+61 (2) 6210.5022</phone>
+        <fax>+61 (2) 6210.6022</fax>
+        <web_site> www.demo-perth-suppliers.com </web_site>
+        <extras_not_provided>false</extras_not_provided>
+        <special_offers_not_provided>false</special_offers_not_provided>
+        <address>
+          <address_1>250 St. Georges</address_1>
+          <address_2>Level 16 </address_2>
+          <city>Perth</city>
+          <state>Western Australia </state>
+          <country>Australia</country>
+          <postal_code>6280</postal_code>
+        </address>
+        <contact_informations>
+          <contact_information>
+            <first_name>Demo</first_name>
+            <last_name>Supplier</last_name>
+            <email>demo_supplier@gmail.com</email>
+            <phone>+61 (2) 6210.5022</phone>
+            <fax>+61 (2) 6210.6022</fax>
+            <contact_type>Billing</contact_type>
+          </contact_information>
+          <contact_information>
+            <first_name>Demo</first_name>
+            <last_name>Supplier</last_name>
+            <email>demo_supplier@gmail.com</email>
+            <phone>+61 (2) 6210.5022</phone>
+            <fax>+61 (2) 6210.6022</fax>
+            <contact_type>Reservation</contact_type>
+          </contact_information>
+          <contact_information>
+            <first_name>Demo</first_name>
+            <last_name>Supplier</last_name>
+            <email>demo_supplier@gmail.com</email>
+            <phone>+61 (2) 6210.5022</phone>
+            <fax>+61 (2) 6210.6022</fax>
+            <contact_type>Sales</contact_type>
+          </contact_information>
+        </contact_informations>
+        <rating_and_amenities>
+          <classifications>
+            <classification>Hotel</classification>
+            <classification>Homestay/Farmstay</classification>
+            <classification>Motel</classification>
+            <classification>Bed &amp; Breakfast</classification>
+          </classifications>
+          <rating>4.5</rating>
+          <rating_type>Self-Assessed</rating_type>
+          <amenities>
+            <amenity>Bicycle Hire</amenity>
+            <amenity>Children's Play Area</amenity>
+            <amenity>Day Spa</amenity>
+            <amenity>Day Tours/Tour Desk</amenity>
+            <amenity>Established Gardens</amenity>
+            <amenity>Exercise Equipment</amenity>
+            <amenity>Library</amenity>
+            <amenity>Lift</amenity>
+            <amenity>Sauna</amenity>
+          </amenities>
+        </rating_and_amenities>
+        <location_policy>
+          <checkin>
+            <check_in_time>3:30am</check_in_time>
+            <check_out_time>4:00pm</check_out_time>
+            <late_checkout>true</late_checkout>
+            <late_checkout_until>5:30pm</late_checkout_until>
+            <late_checkout_cost>17.0</late_checkout_cost>
+            <late_checkout_cost_type>Percentage</late_checkout_cost_type>
+            <late_checkout_percentage_type>Percentage of Nightly Rate</late_checkout_percentage_type>
+            <early_checkin>true</early_checkin>
+            <early_checkin_from>1:00am</early_checkin_from>
+            <early_checkin_cost>320.0</early_checkin_cost>
+            <early_checkin_cost_type>Fixed Cost</early_checkin_cost_type>
+            <early_checkin_percentage_type>Percentage of Nightly Rate</early_checkin_percentage_type>
+            <total_number_of_rooms>0</total_number_of_rooms>
+          </checkin>
+          <infant_policy_not_applicable>false</infant_policy_not_applicable>
+          <reason_for_infant_policy_not_applicable></reason_for_infant_policy_not_applicable>
+          <infant_age>2..8</infant_age>
+          <child_policy_not_applicable>false</child_policy_not_applicable>
+          <reason_for_child_policy_not_applicable></reason_for_child_policy_not_applicable>
+          <children_age>10..20</children_age>
+          <family_policy_not_applicable>false</family_policy_not_applicable>
+          <adult_count>4</adult_count>
+          <children_count>5</children_count>
+          <child_accompany_count>3</child_accompany_count>
+          <cancellation_policy_conditions>Cancellation will result into 20% deduction of your original cost.</cancellation_policy_conditions>
+          <free_of_charge_policy_not_applicable>true</free_of_charge_policy_not_applicable>
+          <free_of_charge_policy_conditions></free_of_charge_policy_conditions>
+          <group_policy_not_applicable>false</group_policy_not_applicable>
+          <group_policy_conditions>Group policy conditions will depend upon the accommodation duration of the group.</group_policy_conditions>
+        </location_policy>
+        <special_offers>
+          <room_upgrade_offers>
+            <room_upgrade_offer>
+              <title>Demo Room Upgrade Offer</title>
+              <booking_code>BC422</booking_code>
+              <upgrade_processed_at>Time of Check-In</upgrade_processed_at>
+              <valid_dates_of_sale>
+                <valid_date_of_sale>
+                  <start_date>2014-04-01</start_date>
+                  <end_date>2014-04-30</end_date>
+                </valid_date_of_sale>
+              </valid_dates_of_sale>
+              <valid_dates_of_travel>
+                <valid_date_of_travel>
+                  <start_date>2014-04-15</start_date>
+                  <end_date>2014-04-30</end_date>
+                </valid_date_of_travel>
+              </valid_dates_of_travel>
+              <combine_with_other>true</combine_with_other>
+              <combine_offer_desc>Non-AC to AC transition</combine_offer_desc>
+              <special_conditions>Special Conditions- NA</special_conditions>
+              <room_type_upgrades>
+                <room_type_upgrade>
+                  <from_room_type>Standard</from_room_type>
+                  <to_room_type>Deluxe</to_room_type>
+                </room_type_upgrade>
+              </room_type_upgrades>
+            </room_upgrade_offer>
+          </room_upgrade_offers>
+          <family_offers>
+            <family_offer>
+              <title>Demo Family Offer</title>
+              <booking_code>BCFO</booking_code>
+              <valid_dates_of_sale>
+                <valid_date_of_sale>
+                  <start_date>2014-06-01</start_date>
+                  <end_date>2014-09-30</end_date>
+                </valid_date_of_sale>
+              </valid_dates_of_sale>
+              <valid_dates_of_travel>
+                <valid_date_of_travel>
+                  <start_date>2014-08-20</start_date>
+                  <end_date>2014-10-30</end_date>
+                </valid_date_of_travel>
+              </valid_dates_of_travel>
+              <combine_with_other>true</combine_with_other>
+              <combine_offer_desc>Free King Side Bed</combine_offer_desc>
+              <special_conditions>NA</special_conditions>
+              <offer_detail>Offer details go here...</offer_detail>
+              <family_offer_room_types>
+                <family_offer_room_type>
+                  <room_type>Deluxe</room_type>
+                  <rate>Discount</rate>
+                  <rate_discount_type>Percentage</rate_discount_type>
+                  <rate_discount_amount>12.0</rate_discount_amount>
+                  <rate_nett/>
+                  <rate_commission/>
+                </family_offer_room_type>
+                <family_offer_room_type>
+                  <room_type>Standard</room_type>
+                  <rate>Rate amount</rate>
+                  <rate_discount_type>Percentage</rate_discount_type>
+                  <rate_discount_amount/>
+                  <rate_nett>45.0</rate_nett>
+                  <rate_commission>82.0</rate_commission>
+                </family_offer_room_type>
+              </family_offer_room_types>
+            </family_offer>
+          </family_offers>
+          <bonus_offers>
+            <bonus_offer>
+              <title>Demo Bonus Offers</title>
+              <booking_code>BC99</booking_code>
+              <valid_dates_of_sale>
+                <valid_date_of_sale>
+                  <start_date>2014-08-01</start_date>
+                  <end_date>2014-08-31</end_date>
+                </valid_date_of_sale>
+              </valid_dates_of_sale>
+              <valid_dates_of_travel>
+                <valid_date_of_travel>
+                  <start_date>2014-09-01</start_date>
+                  <end_date>2014-09-30</end_date>
+                </valid_date_of_travel>
+              </valid_dates_of_travel>
+              <combine_with_other>false</combine_with_other>
+              <combine_offer_desc/>
+              <special_conditions>NA</special_conditions>
+              <offer_detail>Bonus offer details go here...</offer_detail>
+              <rate_type>Per night</rate_type>
+              <member_count/>
+              <member_max_count/>
+              <rate>Discount</rate>
+              <rate_discount_type>Percentage</rate_discount_type>
+              <rate_discount_amount>16.0</rate_discount_amount>
+              <rate_nett/>
+              <rate_commission/>
+            </bonus_offer>
+          </bonus_offers>
+        </special_offers>
+        <extras>
+          <transfer_extras>
+            <transfer_extra>
+              <code>lt1</code>
+              <title>Local Transport</title>
+              <from_location>Airport</from_location>
+              <to_location>Hotel</to_location>
+              <max_passenger>400</max_passenger>
+              <provide_by_hotel>true</provide_by_hotel>
+              <include_baby_seat>true</include_baby_seat>
+              <is_complimentary>false</is_complimentary>
+              <rate>nett</rate>
+              <commission_percentage/>
+              <adult_return_rate/>
+              <adult_return_nett_rate>80.0</adult_return_nett_rate>
+              <child_return_rate/>
+              <child_return_nett_rate>60.0</child_return_nett_rate>
+              <adult_one_way_rate/>
+              <adult_one_way_nett_rate>70.0</adult_one_way_nett_rate>
+              <luggage_restrictions>No</luggage_restrictions>
+              <pick_up_detail>NA</pick_up_detail>
+            </transfer_extra>
+          </transfer_extras>
+          <meal_extras>
+          </meal_extras>
+          <porterage_extras>
+          </porterage_extras>
+          <other_extras>
+          </other_extras>
+        </extras>
+        <accommodation_products>
+          <accommodation_product>
+            <name>Demo Product</name>
+            <code>pc22</code>
+            <reference_id>5256a0da7a02215d5b000005</reference_id>
+            <unique_id>QS33506</unique_id>
+            <short_desc>Short description for the product goes here...</short_desc>
+            <detail>Additional details for the product goes here...</detail>
+            <general_notes>General notes for the product goes here...</general_notes>
+            <complies_to_eu_regulation>false</complies_to_eu_regulation>
+            <total_room_of_this_type>1100</total_room_of_this_type>
+            <room>
+              <interconnecting_rooms>true</interconnecting_rooms>
+              <classification>suite</classification>
+              <avg_room_size>5555</avg_room_size>
+              <room_size_units>square feet</room_size_units>
+              <beddings>
+                <bedding>
+                  <existing_beddings>
+                    <existing_bedding>Single</existing_bedding>
+                    <existing_bedding>King Split </existing_bedding>
+                    <existing_bedding>Twin Beds</existing_bedding>
+                    <existing_bedding>Queen Queen</existing_bedding>
+                    <existing_bedding>Roll Away</existing_bedding>
+                    <existing_bedding>King King</existing_bedding>
+                  </existing_beddings>
+                  <other_bed_details></other_bed_details>
+                  <number_of_sofa>8</number_of_sofa>
+                  <number_of_rollaways>10</number_of_rollaways>
+                  <existing_bedding_for_children>true</existing_bedding_for_children>
+                </bedding>
+                <bedding>
+                  <existing_beddings>
+                    <existing_bedding>Queen</existing_bedding>
+                    <existing_bedding>King</existing_bedding>
+                  </existing_beddings>
+                  <other_bed_details></other_bed_details>
+                  <number_of_sofa>8</number_of_sofa>
+                  <number_of_rollaways>3</number_of_rollaways>
+                  <existing_bedding_for_children>false</existing_bedding_for_children>
+                </bedding>
+              </beddings>
+              <amenities>
+                <amenity>24 Hour Reception</amenity>
+                <amenity>Child Minding Facilities</amenity>
+                <amenity>Day Spa</amenity>
+                <amenity>Golf</amenity>
+                <amenity>Kiosk</amenity>
+                <amenity>Library</amenity>
+                <amenity>Lift</amenity>
+                <amenity>Water Sports Gear</amenity>
+                <amenity>Wood Heater</amenity>
+              </amenities>
+            </room>
+            <seasons>
+              <season>
+                <name>Year-Start1</name>
+                <start_date>2014-04-01</start_date>
+                <end_date>2014-06-30</end_date>
+                <rate_carry_over_to_next_season>true</rate_carry_over_to_next_season>
+                <season_rates>
+                  <season_rate>
+                    <room_rate_type>default</room_rate_type>
+                    <market>India</market>
+                    <all_other_market>false</all_other_market>
+                    <allocation_type>Allotment</allocation_type>
+                    <room_allotments>
+                      <room_allotment>
+                        <number_of_rooms>120</number_of_rooms>
+                        <releaseback_days>15</releaseback_days>
+                      </room_allotment>
+                      <room_allotment>
+                        <number_of_rooms>50</number_of_rooms>
+                        <releaseback_days>9</releaseback_days>
+                      </room_allotment>
+                    </room_allotments>
+                    <cancellation_policy>Cancellation will result into 20% deduction of your original cost.</cancellation_policy>
+                    <use_location_cancelation_policy>true</use_location_cancelation_policy>
+                    <rate_sets>
+                      <rate_set>
+                        <name>Night-RateSet</name>
+                        <code>NRC</code>
+                        <template_type>Nightly</template_type>
+                        <days_of_week>
+                          <day>Tue</day>
+                          <day>Fri</day>
+                          <day>Sat</day>
+                          <day>Sun</day>
+                        </days_of_week>
+                        <rates>include_commission</rates>
+                        <rate_type>person_per_night</rate_type>
+                        <commission_percentage>12</commission_percentage>
+                        <rate_details>
+                          <rate_detail>
+                            <price_code>pc1</price_code>
+                            <description>1 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>1</max_adults_plus_child>
+                            <retail_rate>400.0</retail_rate>
+                            <nett_rate>352.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>2 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>2</max_adults_plus_child>
+                            <retail_rate>700.0</retail_rate>
+                            <nett_rate>616.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc3</price_code>
+                            <description>3 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>3</max_adults_plus_child>
+                            <retail_rate>1000.0</retail_rate>
+                            <nett_rate>880.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc4</price_code>
+                            <description>4 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>4</max_adults_plus_child>
+                            <retail_rate>1200.0</retail_rate>
+                            <nett_rate>1056.0</nett_rate>
+                            <extra_adult>3</extra_adult>
+                            <extra_child>3</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>5 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>5</max_adults_plus_child>
+                            <retail_rate>1300.0</retail_rate>
+                            <nett_rate>1144.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>6 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>6</max_adults_plus_child>
+                            <retail_rate>1350.0</retail_rate>
+                            <nett_rate>1188.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>7 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>7</max_adults_plus_child>
+                            <retail_rate>1380.0</retail_rate>
+                            <nett_rate>1214.4</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc8</price_code>
+                            <description>8 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>8</max_adults_plus_child>
+                            <retail_rate>1400.0</retail_rate>
+                            <nett_rate>1232.0</nett_rate>
+                            <extra_adult>0</extra_adult>
+                            <extra_child>0</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                        </rate_details>
+                        <extras>
+                          <transfer_extras>
+                            <transfer_extra>
+                              <code>lt1</code>
+                              <title>Local Transport</title>
+                              <from_location>Airport</from_location>
+                              <to_location>Hotel</to_location>
+                              <max_passenger>400</max_passenger>
+                              <provide_by_hotel>true</provide_by_hotel>
+                              <include_baby_seat>true</include_baby_seat>
+                              <is_complimentary>false</is_complimentary>
+                              <rate>nett</rate>
+                              <commission_percentage/>
+                              <adult_return_rate/>
+                              <adult_return_nett_rate>80.0</adult_return_nett_rate>
+                              <child_return_rate/>
+                              <child_return_nett_rate>60.0</child_return_nett_rate>
+                              <adult_one_way_rate/>
+                              <adult_one_way_nett_rate>70.0</adult_one_way_nett_rate>
+                              <luggage_restrictions>No</luggage_restrictions>
+                              <pick_up_detail>NA</pick_up_detail>
+                            </transfer_extra>
+                          </transfer_extras>
+                          <meal_extras>
+                          </meal_extras>
+                          <porterage_extras>
+                          </porterage_extras>
+                          <other_extras>
+                          </other_extras>
+                        </extras>
+                      </rate_set>
+                    </rate_sets>
+                  </season_rate>
+                  <season_rate>
+                    <room_rate_type>default</room_rate_type>
+                    <market>South America</market>
+                    <all_other_market>false</all_other_market>
+                    <allocation_type>Allotment</allocation_type>
+                    <room_allotments>
+                      <room_allotment>
+                        <number_of_rooms>120</number_of_rooms>
+                        <releaseback_days>15</releaseback_days>
+                      </room_allotment>
+                      <room_allotment>
+                        <number_of_rooms>50</number_of_rooms>
+                        <releaseback_days>9</releaseback_days>
+                      </room_allotment>
+                    </room_allotments>
+                    <cancellation_policy>Cancellation will result into 20% deduction of your original cost.</cancellation_policy>
+                    <use_location_cancelation_policy>true</use_location_cancelation_policy>
+                    <rate_sets>
+                      <rate_set>
+                        <name>Night-RateSet</name>
+                        <code>NRC</code>
+                        <template_type>Nightly</template_type>
+                        <days_of_week>
+                          <day>Tue</day>
+                          <day>Fri</day>
+                          <day>Sat</day>
+                          <day>Sun</day>
+                        </days_of_week>
+                        <rates>include_commission</rates>
+                        <rate_type>person_per_night</rate_type>
+                        <commission_percentage>12</commission_percentage>
+                        <rate_details>
+                          <rate_detail>
+                            <price_code>pc1</price_code>
+                            <description>1 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>1</max_adults_plus_child>
+                            <retail_rate>400.0</retail_rate>
+                            <nett_rate>352.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>2 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>2</max_adults_plus_child>
+                            <retail_rate>700.0</retail_rate>
+                            <nett_rate>616.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc3</price_code>
+                            <description>3 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>3</max_adults_plus_child>
+                            <retail_rate>1000.0</retail_rate>
+                            <nett_rate>880.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc4</price_code>
+                            <description>4 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>4</max_adults_plus_child>
+                            <retail_rate>1200.0</retail_rate>
+                            <nett_rate>1056.0</nett_rate>
+                            <extra_adult>3</extra_adult>
+                            <extra_child>3</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>5 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>5</max_adults_plus_child>
+                            <retail_rate>1300.0</retail_rate>
+                            <nett_rate>1144.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>6 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>6</max_adults_plus_child>
+                            <retail_rate>1350.0</retail_rate>
+                            <nett_rate>1188.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>7 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>7</max_adults_plus_child>
+                            <retail_rate>1380.0</retail_rate>
+                            <nett_rate>1214.4</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc8</price_code>
+                            <description>8 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>8</max_adults_plus_child>
+                            <retail_rate>1400.0</retail_rate>
+                            <nett_rate>1232.0</nett_rate>
+                            <extra_adult>0</extra_adult>
+                            <extra_child>0</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                        </rate_details>
+                        <extras>
+                          <transfer_extras>
+                            <transfer_extra>
+                              <code>lt1</code>
+                              <title>Local Transport</title>
+                              <from_location>Airport</from_location>
+                              <to_location>Hotel</to_location>
+                              <max_passenger>400</max_passenger>
+                              <provide_by_hotel>true</provide_by_hotel>
+                              <include_baby_seat>true</include_baby_seat>
+                              <is_complimentary>false</is_complimentary>
+                              <rate>nett</rate>
+                              <commission_percentage/>
+                              <adult_return_rate/>
+                              <adult_return_nett_rate>80.0</adult_return_nett_rate>
+                              <child_return_rate/>
+                              <child_return_nett_rate>60.0</child_return_nett_rate>
+                              <adult_one_way_rate/>
+                              <adult_one_way_nett_rate>70.0</adult_one_way_nett_rate>
+                              <luggage_restrictions>No</luggage_restrictions>
+                              <pick_up_detail>NA</pick_up_detail>
+                            </transfer_extra>
+                          </transfer_extras>
+                          <meal_extras>
+                          </meal_extras>
+                          <porterage_extras>
+                          </porterage_extras>
+                          <other_extras>
+                          </other_extras>
+                        </extras>
+                      </rate_set>
+                    </rate_sets>
+                  </season_rate>
+                </season_rates>
+                <blackout_periods>
+                  <blackout_period>
+                    <name>ys-blackout1</name>
+                    <start_date>2014-06-10</start_date>
+                    <end_date>2014-06-15</end_date>
+                  </blackout_period>
+                </blackout_periods>
+              </season>
+              <season>
+                <name>Year-Mid2</name>
+                <start_date>2014-07-01</start_date>
+                <end_date>2014-12-31</end_date>
+                <rate_carry_over_to_next_season>false</rate_carry_over_to_next_season>
+                <season_rates>
+                  <season_rate>
+                    <room_rate_type>default</room_rate_type>
+                    <market>UK</market>
+                    <all_other_market>true</all_other_market>
+                    <allocation_type>Allotment</allocation_type>
+                    <room_allotments>
+                      <room_allotment>
+                        <number_of_rooms>120</number_of_rooms>
+                        <releaseback_days>15</releaseback_days>
+                      </room_allotment>
+                      <room_allotment>
+                        <number_of_rooms>50</number_of_rooms>
+                        <releaseback_days>9</releaseback_days>
+                      </room_allotment>
+                    </room_allotments>
+                    <cancellation_policy>Cancellation will result into 20% deduction of your original cost.</cancellation_policy>
+                    <use_location_cancelation_policy>true</use_location_cancelation_policy>
+                    <rate_sets>
+                      <rate_set>
+                        <name>Night-RateSet</name>
+                        <code>NRC</code>
+                        <template_type>Nightly</template_type>
+                        <days_of_week>
+                          <day>Tue</day>
+                          <day>Fri</day>
+                          <day>Sat</day>
+                          <day>Sun</day>
+                        </days_of_week>
+                        <rates>include_commission</rates>
+                        <rate_type>person_per_night</rate_type>
+                        <commission_percentage>12</commission_percentage>
+                        <rate_details>
+                          <rate_detail>
+                            <price_code>pc1</price_code>
+                            <description>1 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>1</max_adults_plus_child>
+                            <retail_rate>400.0</retail_rate>
+                            <nett_rate>352.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>2 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>2</max_adults_plus_child>
+                            <retail_rate>700.0</retail_rate>
+                            <nett_rate>616.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc3</price_code>
+                            <description>3 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>3</max_adults_plus_child>
+                            <retail_rate>1000.0</retail_rate>
+                            <nett_rate>880.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc4</price_code>
+                            <description>4 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>4</max_adults_plus_child>
+                            <retail_rate>1200.0</retail_rate>
+                            <nett_rate>1056.0</nett_rate>
+                            <extra_adult>3</extra_adult>
+                            <extra_child>3</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>5 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>5</max_adults_plus_child>
+                            <retail_rate>1300.0</retail_rate>
+                            <nett_rate>1144.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>6 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>6</max_adults_plus_child>
+                            <retail_rate>1350.0</retail_rate>
+                            <nett_rate>1188.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>7 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>7</max_adults_plus_child>
+                            <retail_rate>1380.0</retail_rate>
+                            <nett_rate>1214.4</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc8</price_code>
+                            <description>8 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>8</max_adults_plus_child>
+                            <retail_rate>1400.0</retail_rate>
+                            <nett_rate>1232.0</nett_rate>
+                            <extra_adult>0</extra_adult>
+                            <extra_child>0</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                        </rate_details>
+                        <extras>
+                          <transfer_extras>
+                            <transfer_extra>
+                              <code>lt1</code>
+                              <title>Local Transport</title>
+                              <from_location>Airport</from_location>
+                              <to_location>Hotel</to_location>
+                              <max_passenger>400</max_passenger>
+                              <provide_by_hotel>true</provide_by_hotel>
+                              <include_baby_seat>true</include_baby_seat>
+                              <is_complimentary>false</is_complimentary>
+                              <rate>nett</rate>
+                              <commission_percentage/>
+                              <adult_return_rate/>
+                              <adult_return_nett_rate>80.0</adult_return_nett_rate>
+                              <child_return_rate/>
+                              <child_return_nett_rate>60.0</child_return_nett_rate>
+                              <adult_one_way_rate/>
+                              <adult_one_way_nett_rate>70.0</adult_one_way_nett_rate>
+                              <luggage_restrictions>No</luggage_restrictions>
+                              <pick_up_detail>NA</pick_up_detail>
+                            </transfer_extra>
+                          </transfer_extras>
+                          <meal_extras>
+                          </meal_extras>
+                          <porterage_extras>
+                          </porterage_extras>
+                          <other_extras>
+                          </other_extras>
+                        </extras>
+                      </rate_set>
+                    </rate_sets>
+                  </season_rate>
+                </season_rates>
+                <blackout_periods>
+                  <blackout_period>
+                    <name>yd-blackout</name>
+                    <start_date>2014-12-17</start_date>
+                    <end_date>2014-12-31</end_date>
+                  </blackout_period>
+                </blackout_periods>
+              </season>
+              <season>
+                <name>Year-End3</name>
+                <start_date>2015-01-01</start_date>
+                <end_date>2015-03-31</end_date>
+                <rate_carry_over_to_next_season>true</rate_carry_over_to_next_season>
+                <season_rates>
+                  <season_rate>
+                    <room_rate_type>default</room_rate_type>
+                    <market>New Zealand</market>
+                    <all_other_market>false</all_other_market>
+                    <allocation_type>Allotment</allocation_type>
+                    <room_allotments>
+                      <room_allotment>
+                        <number_of_rooms>120</number_of_rooms>
+                        <releaseback_days>15</releaseback_days>
+                      </room_allotment>
+                      <room_allotment>
+                        <number_of_rooms>50</number_of_rooms>
+                        <releaseback_days>9</releaseback_days>
+                      </room_allotment>
+                    </room_allotments>
+                    <cancellation_policy>Cancellation will result into 20% deduction of your original cost.</cancellation_policy>
+                    <use_location_cancelation_policy>true</use_location_cancelation_policy>
+                    <rate_sets>
+                      <rate_set>
+                        <name>Night-RateSet</name>
+                        <code>NRC</code>
+                        <template_type>Nightly</template_type>
+                        <days_of_week>
+                          <day>Tue</day>
+                          <day>Fri</day>
+                          <day>Sat</day>
+                          <day>Sun</day>
+                        </days_of_week>
+                        <rates>include_commission</rates>
+                        <rate_type>person_per_night</rate_type>
+                        <commission_percentage>12</commission_percentage>
+                        <rate_details>
+                          <rate_detail>
+                            <price_code>pc1</price_code>
+                            <description>1 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>1</max_adults_plus_child>
+                            <retail_rate>400.0</retail_rate>
+                            <nett_rate>352.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>2 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>2</max_adults_plus_child>
+                            <retail_rate>700.0</retail_rate>
+                            <nett_rate>616.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc3</price_code>
+                            <description>3 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>3</max_adults_plus_child>
+                            <retail_rate>1000.0</retail_rate>
+                            <nett_rate>880.0</nett_rate>
+                            <extra_adult>5</extra_adult>
+                            <extra_child>5</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc4</price_code>
+                            <description>4 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>4</max_adults_plus_child>
+                            <retail_rate>1200.0</retail_rate>
+                            <nett_rate>1056.0</nett_rate>
+                            <extra_adult>3</extra_adult>
+                            <extra_child>3</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>5 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>5</max_adults_plus_child>
+                            <retail_rate>1300.0</retail_rate>
+                            <nett_rate>1144.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>6 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>6</max_adults_plus_child>
+                            <retail_rate>1350.0</retail_rate>
+                            <nett_rate>1188.0</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code></price_code>
+                            <description>7 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>7</max_adults_plus_child>
+                            <retail_rate>1380.0</retail_rate>
+                            <nett_rate>1214.4</nett_rate>
+                            <extra_adult></extra_adult>
+                            <extra_child></extra_child>
+                            <not_applicable>true</not_applicable>
+                            <reason_for_not_applicable>NA</reason_for_not_applicable>
+                          </rate_detail>
+                          <rate_detail>
+                            <price_code>pc8</price_code>
+                            <description>8 Guests</description>
+                            <max_adults/>
+                            <max_adults_plus_child>8</max_adults_plus_child>
+                            <retail_rate>1400.0</retail_rate>
+                            <nett_rate>1232.0</nett_rate>
+                            <extra_adult>0</extra_adult>
+                            <extra_child>0</extra_child>
+                            <not_applicable>false</not_applicable>
+                            <reason_for_not_applicable></reason_for_not_applicable>
+                          </rate_detail>
+                        </rate_details>
+                        <extras>
+                          <transfer_extras>
+                          </transfer_extras>
+                          <meal_extras>
+                          </meal_extras>
+                          <porterage_extras>
+                          </porterage_extras>
+                          <other_extras>
+                          </other_extras>
+                        </extras>
+                      </rate_set>
+                    </rate_sets>
+                  </season_rate>
+                </season_rates>
+                <blackout_periods>
+                </blackout_periods>
+              </season>
+            </seasons>
+            <special_offers>
+              <room_upgrade_offers>
+                <room_upgrade_offer>
+                  <title>Demo Room Upgrade Offer</title>
+                  <booking_code>BC422</booking_code>
+                  <upgrade_processed_at>Time of Check-In</upgrade_processed_at>
+                  <valid_dates_of_sale>
+                    <valid_date_of_sale>
+                      <start_date>2014-04-01</start_date>
+                      <end_date>2014-04-30</end_date>
+                    </valid_date_of_sale>
+                  </valid_dates_of_sale>
+                  <valid_dates_of_travel>
+                    <valid_date_of_travel>
+                      <start_date>2014-04-15</start_date>
+                      <end_date>2014-04-30</end_date>
+                    </valid_date_of_travel>
+                  </valid_dates_of_travel>
+                  <combine_with_other>true</combine_with_other>
+                  <combine_offer_desc>Non-AC to AC transition</combine_offer_desc>
+                  <special_conditions>Special Conditions- NA</special_conditions>
+                  <room_type_upgrades>
+                    <room_type_upgrade>
+                      <from_room_type>Standard</from_room_type>
+                      <to_room_type>Deluxe</to_room_type>
+                    </room_type_upgrade>
+                  </room_type_upgrades>
+                </room_upgrade_offer>
+              </room_upgrade_offers>
+              <family_offers>
+                <family_offer>
+                  <title>Demo Family Offer</title>
+                  <booking_code>BCFO</booking_code>
+                  <valid_dates_of_sale>
+                    <valid_date_of_sale>
+                      <start_date>2014-06-01</start_date>
+                      <end_date>2014-09-30</end_date>
+                    </valid_date_of_sale>
+                  </valid_dates_of_sale>
+                  <valid_dates_of_travel>
+                    <valid_date_of_travel>
+                      <start_date>2014-08-20</start_date>
+                      <end_date>2014-10-30</end_date>
+                    </valid_date_of_travel>
+                  </valid_dates_of_travel>
+                  <combine_with_other>true</combine_with_other>
+                  <combine_offer_desc>Free King Side Bed</combine_offer_desc>
+                  <special_conditions>NA</special_conditions>
+                  <offer_detail>Offer details go here...</offer_detail>
+                  <family_offer_room_types>
+                    <family_offer_room_type>
+                      <room_type>Deluxe</room_type>
+                      <rate>Discount</rate>
+                      <rate_discount_type>Percentage</rate_discount_type>
+                      <rate_discount_amount>12.0</rate_discount_amount>
+                      <rate_nett/>
+                      <rate_commission/>
+                    </family_offer_room_type>
+                    <family_offer_room_type>
+                      <room_type>Standard</room_type>
+                      <rate>Rate amount</rate>
+                      <rate_discount_type>Percentage</rate_discount_type>
+                      <rate_discount_amount/>
+                      <rate_nett>45.0</rate_nett>
+                      <rate_commission>82.0</rate_commission>
+                    </family_offer_room_type>
+                  </family_offer_room_types>
+                </family_offer>
+              </family_offers>
+              <bonus_offers>
+              </bonus_offers>
+            </special_offers>
+            <location_policy>
+              <infant_policy_not_applicable>false</infant_policy_not_applicable>
+              <reason_for_infant_policy_not_applicable></reason_for_infant_policy_not_applicable>
+              <infant_age>2..8</infant_age>
+              <child_policy_not_applicable>false</child_policy_not_applicable>
+              <reason_for_child_policy_not_applicable></reason_for_child_policy_not_applicable>
+              <children_age>10..20</children_age>
+              <family_policy_not_applicable>false</family_policy_not_applicable>
+              <adult_count>4</adult_count>
+              <children_count>5</children_count>
+              <child_accompany_count>3</child_accompany_count>
+              <cancellation_policy_conditions/>
+              <free_of_charge_policy_not_applicable>true</free_of_charge_policy_not_applicable>
+              <free_of_charge_policy_conditions></free_of_charge_policy_conditions>
+              <group_policy_not_applicable>false</group_policy_not_applicable>
+              <group_policy_conditions>Group policy conditions will depend upon the accommodation duration of the group.</group_policy_conditions>
+            </location_policy>
+          </accommodation_product>
+        </accommodation_products>
+      </supplier_contract_information>
+      <contract_footer>
+        <signatures>
+          <signature>
+            <supplier_sign_date>2013-10-10</supplier_sign_date>
+            <supplier_user>Demo Supplier</supplier_user>
+            <contractor_sign_date>2013-10-10</contractor_sign_date>
+            <contractor_user>Demo Contractor</contractor_user>
+          </signature>
+        </signatures>
+        <revision_histories>
+          <revision_history>
+            <revision>1</revision>
+            <date_and_time>2013-10-10T13:24:12Z</date_and_time>
+            <editing_company>Demo Contractor Demo Contractor Company</editing_company>
+            <section>term_condition</section>
+            <contract_changes>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>2</revision>
+            <date_and_time>2013-10-10T13:24:12Z</date_and_time>
+            <editing_company>Demo Contractor Demo Contractor Company</editing_company>
+            <section>term_condition</section>
+            <contract_changes>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>3</revision>
+            <date_and_time>2013-10-10T13:24:12Z</date_and_time>
+            <editing_company>Demo Contractor Demo Contractor Company</editing_company>
+            <section>Contract</section>
+            <contract_changes>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>4</revision>
+            <date_and_time>2013-10-10T13:24:24Z</date_and_time>
+            <editing_company>Demo Supplier Demo Supplier Company</editing_company>
+            <section>Contract</section>
+            <contract_changes>
+              <change>state updated from requested to in_progress</change>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>5</revision>
+            <date_and_time>2013-10-10T13:24:51Z</date_and_time>
+            <editing_company>Demo Supplier Demo Supplier Company</editing_company>
+            <section>Products</section>
+            <contract_changes>
+              <change>Product- Demo Product submitted.</change>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>6</revision>
+            <date_and_time>2013-10-10T13:24:56Z</date_and_time>
+            <editing_company>Demo Supplier Demo Supplier Company</editing_company>
+            <section>Products</section>
+            <contract_changes>
+              <change>offer_ids updated from {"5256801f98e0ea903d00002d"=&gt;true, "5256869b98e0ea903d000031"=&gt;true, "5256871798e0ea379c00002b"=&gt;false} to {"5256aa967a0221d393000153"=&gt;true, "5256aa967a0221d393000154"=&gt;true, "5256aa967a0221d393000155"=&gt;false}</change>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>7</revision>
+            <date_and_time>2013-10-10T13:25:07Z</date_and_time>
+            <editing_company>Demo Supplier Demo Supplier Company</editing_company>
+            <section>Contract</section>
+            <contract_changes>
+              <change>state updated from in_progress to signed</change>
+            </contract_changes>
+          </revision_history>
+          <revision_history>
+            <revision>8</revision>
+            <date_and_time>2013-10-10T13:25:23Z</date_and_time>
+            <editing_company>Demo Contractor Demo Contractor Company</editing_company>
+            <section>Contract</section>
+            <contract_changes>
+              <change>state updated from signed to completed</change>
+            </contract_changes>
+          </revision_history>
+        </revision_histories>
+      </contract_footer>
+    </contract>
+  </contracts>
+</tourconnect_contract_export>
