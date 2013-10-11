@@ -679,7 +679,7 @@
                                           <xs:element maxOccurs="1" minOccurs="0" name="all_other_market" type="xs:string"/>
                                           <xs:element name="allocation_type" type="xs:string"/>
                                           <xs:element maxOccurs="1" minOccurs="0" name="releaseback_days" type="xs:string"/>
-                                          <xs:element name="room_allotments">
+                                          <xs:element name="room_allotments" minOccurs="0">
                                             <xs:complexType>
                                               <xs:sequence>
                                                 <xs:element maxOccurs="unbounded" minOccurs="0" name="room_allotment">
