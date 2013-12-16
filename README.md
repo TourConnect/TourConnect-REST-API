@@ -1,40 +1,25 @@
-TourConnect
+TourConnect REST API
 ========================
 
-#### More Information
+This documentation provides basic instructions for a Contractor on how to programmatically access signed contracts on the TourConnect platform.  You will need a live TourConnect account and at least one signed test or live contract available for download.
 
-
-#### Required Gems
-
-This application requires this gem:
-
-* "rails":http://rubygems.org/gems/rails
-
-#### Dependencies
-
-To use this application, you will need:
-
-* The Ruby language (version 1.9.3)
-* Rails (version 3.2.11)
-
-#### Installing the Application
-
-#### Documentation and Support
-
-
-#### Issues
-
-#### License
-
-
-#### Getting XML's of completed contracts:
-
-Contractors can generate XML of completed contracts, using following URLs:
-
-####Note
 Before accessing the API, you will need the following:
+
 * **Your API Key** -  This is available within your TourConnect profile.  To locate this key, login to your account and then scroll down to the bottom of the 'Profile' page where you would see the value for your 'API Key'. You will use this key for all REST GET operations.
-* **API Version Number** - we maintain multiple versions of the API in the event that our subscribers need additional time to make necessary changes to their integration to take advantage of newly released versions of our API.  The CURRENT VERSION = 2
+
+* **API Version Number** - we maintain multiple versions of the API in the event that our subscribers need additional time to make necessary changes to their integration to take advantage of newly released versions of our API.  The CURRENT VERSION = 2.  This documentation applies only to version 2.
+
+Once you have all of the above information, you can begin downloading XML versions of your contracts.  Using the above information, you will access the API endpoint prefix as follows:
+
+```
+https://contracting.tourconnect.com/contractors/[ContractorID]/key/[Your API Key]/version/[API Version Number]
+```
+
+Throughout the remainder of the document, we will reference the REST API URL: https://contracting.tourconnect.com/contractors/[ContractorID]/key/[YourAPIKey]/version/[APIVersionNumber] as __/TourConnectEndpoint__ .
+
+
+## Accessing Signed Contracts
+
 * **FUNCTION NAME** - Based on this name, system determines what data should be provided to user.
 
 Optional arguments:
@@ -49,20 +34,16 @@ Optional arguments:
 Note:
 * User needs to pass arguments by appending them to URL as exlpained below:
   For a contractor, to get XML data of contracts **FUNCTION-NAME** is "get_contracts"
-* First 3 parameters in URL (key, version & function name) are mandetory and they must be in **same sequence** as explained below.
-* Tourconnect assumes the following date encoding for all API calls.  Any call not formatted correctly will result in an error and no data being returned:
-__yyyy-mm-dd__
-Once you have all of the above information, you can begin downloading XML versions of your contracts.  Using the above information, your API endpoint prefix:
+* First 3 parameters in URL (key, version & function name) are mandetory and they must be in the presribed sequence **same sequence** shown below.
+* Tourconnect requires the following date encoding for all API calls: __yyyy-mm-dd__  .  Any call not formatted correctly will result in an error and no data being returned.
 
-```
-https://contracting.tourconnect.com/contractors/[ContractorID]/key/[Your API Key]/version/[API Version Number]
-```
+
 __example:__
 ```
 https://contracting.tourconnect.com/contractors/demo-ito/key/07823D39DCAE9F1B2765A229109C658E/version/2/get_contracts.xml
 ```
 
-Moving forward, we will reference the url https://contracting.tourconnect.com/contractors/[ContractorID]/key/[YourAPIKey]/version/[APIVersionNumber] as __/TourConnectEndpoint__ .
+
 
 ####Note On Dates
 Tourconnect assumes the following date encoding for all API calls.  Any call not formatted correctly will result in an error and no data being returned:
