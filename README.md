@@ -5,7 +5,7 @@ This documentation provides basic instructions for a Contractor on how to progra
 
 Before accessing the API, you will need the following:
 
-* **ContractorID** * - This is your Contractor name and it is displayed at the top left of your dashboard after login.
+* **ContractorID** - This is your Contractor name and it is displayed at the top left of your dashboard after login.
 
 * **API Key** -  This is available within your TourConnect profile.  To locate this key, login to your account and then scroll down to the bottom of the 'Profile' page where you would see the value for your 'API Key'. You will use this key for all REST GET operations.
 
@@ -42,30 +42,17 @@ and then using the following optional arguments to further refine the list of co
 *  ***START DATE & END DATE*** - Used to retrieve Contracts for a specified date range and regardless of whether the Contracts had been retrieved in prior API calls.
 
 
+Using the Function Name and the optional arguments you can access any/all of YOUR signed contracts on TourConnect.  Before listing the specific functions and examples, please review the following important notes:
+
+* The first 4 parameters in URL (contractorID, key, version & function name) are mandetory and they must be in the exact order prescribed in the endpoint. 
+* Tourconnect requires that all dates used in the API calls are formatted as follows: __yyyy-mm-dd__ .  Any call not formatted correctly will result in an error and no data being returned.
 
 
-Note:
-* User needs to pass arguments by appending them to URL as exlpained below:
-  For a contractor, to get XML data of contracts **FUNCTION-NAME** is "get_contracts"
-* First 3 parameters in URL (key, version & function name) are mandetory and they must be in the presribed sequence **same sequence** shown below.
-* Tourconnect requires the following date encoding for all API calls: __yyyy-mm-dd__  .  Any call not formatted correctly will result in an error and no data being returned.
-
-
-
-
-
-
-####Note On Dates
-Tourconnect assumes the following date encoding for all API calls.  Any call not formatted correctly will result in an error and no data being returned:
-__yyyy-mm-dd__
-
-
-
-##Retrieving Contracts
+## Retrieving Contracts
 There are various parameters that can be used to retrive your contract data.  You can download all contracts that have not yet been requested/transfered, you can request by date ranges, you can request by SupplierID and finally, by a combination of date range and SupplierID.
 
-###Get All un-downloaded Contracts
-This is the recommended method to accessing the contracts.  It will transmit all the contracts, for all the Suppliers that have not yet been requested by you.  
+### Retrieve All un-downloaded Contracts
+This is the recommended method to accessing the contracts.  It will transmit all the contracts, for all the Suppliers that have not yet been requested/downloaded by you.
 
 ```
 /TourConnectEndpoint/get_contracts.xml
@@ -99,7 +86,6 @@ __or__
 ```
 /TourConnectEndpoint/get_contracts/supplier/<supplierID>/start-date/<startdate>/end-date/<enddate>.xml
 ```
-
 
 ##Return Codes
 There are several general status or return codes that come back after an API call.  Please refer to the following table for the list of those codes and their associated reason.
