@@ -5,11 +5,15 @@ This documentation provides basic instructions for a Contractor on how to progra
 
 Before accessing the API, you will need the following:
 
-* **Your API Key** -  This is available within your TourConnect profile.  To locate this key, login to your account and then scroll down to the bottom of the 'Profile' page where you would see the value for your 'API Key'. You will use this key for all REST GET operations.
+* **ContractorID** * - This is your Contractor name and it is displayed at the top left of your dashboard after login.
+
+* **API Key** -  This is available within your TourConnect profile.  To locate this key, login to your account and then scroll down to the bottom of the 'Profile' page where you would see the value for your 'API Key'. You will use this key for all REST GET operations.
 
 * **API Version Number** - we maintain multiple versions of the API in the event that our subscribers need additional time to make necessary changes to their integration to take advantage of newly released versions of our API.  The CURRENT VERSION = 2.  This documentation applies only to version 2.
 
-Once you have all of the above information, you can begin downloading XML versions of your contracts.  Using the above information, you will access the API endpoint prefix as follows:
+## API Endpoint
+
+Once you have your Key and Version number established, you will be able to determine your API Endpoint as follows:
 
 ```
 https://contracting.tourconnect.com/contractors/[ContractorID]/key/[Your API Key]/version/[API Version Number]
@@ -17,19 +21,28 @@ https://contracting.tourconnect.com/contractors/[ContractorID]/key/[Your API Key
 
 Throughout the remainder of the document, we will reference the REST API URL: https://contracting.tourconnect.com/contractors/[ContractorID]/key/[YourAPIKey]/version/[APIVersionNumber] as __/TourConnectEndpoint__ .
 
+A specific example of what an endpoint would look like with the ContractorID, API Key and Version filled using a test account using the following: 
+* **API KEY** = "07823D39DCAE9F1B2765A229109C658E".
+* **SUPPLIER ID** = "demo-tours".
+* **API Version Number** = "2".
+
+__your endpoint would look like:__
+https://contracting.tourconnect.com/contractors/demo-ito/key/07823D39DCAE9F1B2765A229109C658E/version/2/get_contracts.xml
+
 
 ## Accessing Signed Contracts
 
+TourConnect allows you to access signed contracts in a number of different ways using different function calls with different options.  You create API calls with a single:
+
 * **FUNCTION NAME** - Based on this name, system determines what data should be provided to user.
 
-Optional arguments:
-*  ***SUPPLIER ID*** - Supplier company name, if user need to fetch data specific to a supplier.
-*  ***START DATE & END DATE*** - If user needs to fetch data as per date range filtering.
+and then using the following optional arguments to further refine the list of contracts that are retrieved from TourConnect:
+
+*  ***SUPPLIER ID*** - A specific Supplier company name if you would like to retrieve contracts for a single, named Supplier.
+*  ***START DATE & END DATE*** - Used to retrieve Contracts for a specified date range and regardless of whether the Contracts had been retrieved in prior API calls.
 
 
-* Assume Contractor has **API KEY** as "07823D39DCAE9F1B2765A229109C658E".
-* **SUPPLIER ID** is "demo-tours".
-* Default (start) **API Version Number** is "2".
+
 
 Note:
 * User needs to pass arguments by appending them to URL as exlpained below:
@@ -38,10 +51,7 @@ Note:
 * Tourconnect requires the following date encoding for all API calls: __yyyy-mm-dd__  .  Any call not formatted correctly will result in an error and no data being returned.
 
 
-__example:__
-```
-https://contracting.tourconnect.com/contractors/demo-ito/key/07823D39DCAE9F1B2765A229109C658E/version/2/get_contracts.xml
-```
+
 
 
 
@@ -49,21 +59,7 @@ https://contracting.tourconnect.com/contractors/demo-ito/key/07823D39DCAE9F1B276
 Tourconnect assumes the following date encoding for all API calls.  Any call not formatted correctly will result in an error and no data being returned:
 __yyyy-mm-dd__
 
-##Return Codes
-There are several general status or return codes that come back after an API call.  Please refer to the following table for the list of those codes and their associated reason.
 
-
-| Code        | Reason |
-| ------------- | :------------- |
-| 202 | OK
-| 203 | Invalid Contractor ID
-| 204 | Invalid SupplierID
-| 205 | Invalid Date format. Please specify date as yyyy-mm-dd
-| 206 | Invalid Date Range
-| 207 | Invalid API Key
-| 208 | Invalid function
-| 209 | Invalid API Version
-| 210 | Invalid arguments: <list of invalid arguments> 
 
 ##Retrieving Contracts
 There are various parameters that can be used to retrive your contract data.  You can download all contracts that have not yet been requested/transfered, you can request by date ranges, you can request by SupplierID and finally, by a combination of date range and SupplierID.
@@ -103,6 +99,23 @@ __or__
 ```
 /TourConnectEndpoint/get_contracts/supplier/<supplierID>/start-date/<startdate>/end-date/<enddate>.xml
 ```
+
+
+##Return Codes
+There are several general status or return codes that come back after an API call.  Please refer to the following table for the list of those codes and their associated reason.
+
+| Code        | Reason |
+| ------------- | :------------- |
+| 202 | OK
+| 203 | Invalid Contractor ID
+| 204 | Invalid SupplierID
+| 205 | Invalid Date format. Please specify date as yyyy-mm-dd
+| 206 | Invalid Date Range
+| 207 | Invalid API Key
+| 208 | Invalid function
+| 209 | Invalid API Version
+| 210 | Invalid arguments: <list of invalid arguments> 
+
 
 If you have questions, suggestions or any issues, please feel free to send us a note on:
 http://helpdesk.tourconnect.com
